@@ -1,0 +1,3 @@
+[submodule "ViT_VisionTransformer_PyTorch"]
+	path = ViT_VisionTransformer_PyTorch
+	url = git@github.com:ayush1399/ViT_VisionTransformer_PyTorch.git
