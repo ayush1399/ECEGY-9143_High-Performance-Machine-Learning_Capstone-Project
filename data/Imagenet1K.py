@@ -3,7 +3,7 @@ from PIL import Image
 import os
 
 
-class Imagenet1K(
+class Imagenet1KTest(
     Dataset,
 ):
     def __init__(self, dataset_dir, split, transform=None):
