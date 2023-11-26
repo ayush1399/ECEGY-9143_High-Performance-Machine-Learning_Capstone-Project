@@ -54,6 +54,7 @@ class IV2:
         subset="top-images",
         device=torch.device("cpu" if not torch.cuda.is_available() else "cuda"),
         transforms=None,
+        batch_size=128,
     ):
         model.eval()
         correct = 0
@@ -68,7 +69,7 @@ class IV2:
                 dataset = ImageFolder(join(root, s), transforms)
                 dataloader = DataLoader(
                     dataset,
-                    batch_size=64,
+                    batch_size=batch_size,
                     shuffle=False,
                     num_workers=num_workers,  # type: ignore
                     pin_memory=True,
@@ -94,7 +95,7 @@ class IV2:
             dataset = ImageFolder(join(root, subset), transforms)
             dataloader = DataLoader(
                 dataset,
-                batch_size=64,
+                batch_size=batch_size,
                 shuffle=False,
                 num_workers=num_workers,  # type: ignore
                 pin_memory=True,
