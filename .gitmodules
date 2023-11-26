@@ -2,5 +2,5 @@
 	path = datasets
 	url = git@github.com:ayush1399/Imagenet_Dataloaders_PyTorch.git
 [submodule "ViT"]
-	path = ViT
+	path = models/ViT
 	url = git@github.com:ayush1399/ViT_VisionTransformer_PyTorch.git
