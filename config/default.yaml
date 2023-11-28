@@ -1,0 +1,32 @@
+data:
+  root: "/"
+  ImagenetA: 
+    path: "ImagenetA"
+    params:
+
+  ImagenetC: 
+    path: "ImagenetC"
+    params:
+      - "blur"
+      - "motion_blur"
+      - 
+          - 0
+          - 1
+          - 2
+  
+  ImagenetR:
+    path: "ImagenetR"
+    params:
+
+  ImagenetV2:
+    path: "ImagenetV2"
+    params:
+      - "threshold"
+
+  Imagenet1KTest:
+    path: "ILSVRC2012/test"
+    params:
+
+  Imagenet1KVal:
+    path: "ILSVRC2012/val"
+    params:
