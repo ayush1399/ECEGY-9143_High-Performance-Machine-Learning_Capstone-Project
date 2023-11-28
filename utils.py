@@ -1,4 +1,3 @@
-from ray import get
 from transforms import get_transform
 
 import argparse
@@ -19,9 +18,11 @@ eval_models = ["RPN", "RPN-P", "RPN-PQ", "RPN-PQ-EE", "ViT", "ResNet"]
 argparser = argparse.ArgumentParser()
 argparser.add_argument("--dataset", choices=eval_datasets, required=True)
 argparser.add_argument("--model", choices=eval_models, required=True)
-argparser.add_argument("--batch-size", type=int, default=128)
+argparser.add_argument("--batch_size", type=int, default=128)
 argparser.add_argument("--workers", type=int, default=8)
-argparser.add_argument("--eval-mode", choices=["acc", "inference"])
+argparser.add_argument("--eval_mode", choices=["acc", "perf"], default="acc")
+argparser.add_argument("--silent", action="store_true")
+argparser.add_argument("--top5", action="store_true")
 
 
 def get_args():
@@ -48,3 +49,13 @@ def get_dataset(args, cfg):
         dataset_root,
         transform=transform,
     )
+
+
+def pretty_print_perf(inference_time, args, cfg):
+    print("=" + "*=" * 12)
+    print(f"MODEL: {args.model: <10} DATASET: {args.dataset}")
+    print(f"Batch Size: {args.batch_size: <10} Workers: {args.workers}")
+    print(f"Config params: {getattr(cfg.data, args.dataset).params}")
+    print(f"Inference Time: {inference_time:.3f} ms")
+    print("=" + "*=" * 12)
+    print()
