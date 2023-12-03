@@ -34,7 +34,7 @@ def get_dataset(args, cfg):
 
     dataset = getattr(datasets, args.dataset)
     dataset_root = os.path.join(
-        cfg.data.root, os.path.join(getattr(cfg.data, args.dataset).path.split("/"))
+        cfg.data.root, os.path.join(*getattr(cfg.data, args.dataset).path.split("/"))
     )
 
     if getattr(cfg.data, args.dataset).params is not None:
