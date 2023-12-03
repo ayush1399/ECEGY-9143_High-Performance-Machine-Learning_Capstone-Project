@@ -30,3 +30,6 @@ data:
   Imagenet1KVal:
     path: "ILSVRC2012/val"
     params:
+
+model:
+  input_shape: [3, 224, 224]
