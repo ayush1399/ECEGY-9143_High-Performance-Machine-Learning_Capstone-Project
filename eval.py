@@ -31,7 +31,7 @@ def main():
     args = get_args()
     cfg = get_config()
 
-    model = getattr(models, args.model)
+    model = getattr(models, args.model)()
     dataset = get_dataset(args, cfg)
 
     exec(args, cfg, model, dataset)
