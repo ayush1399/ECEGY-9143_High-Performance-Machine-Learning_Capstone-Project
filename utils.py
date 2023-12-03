@@ -51,12 +51,13 @@ def get_dataset(args, cfg):
     )
 
 
-def pretty_print_perf(inference_time, args, cfg):
+def pretty_print_perf(inference_time, throughput, args, cfg):
     print("=" + "*=" * 12)
     print(f"MODEL: {args.model: <10} DATASET: {args.dataset}")
     print(f"Batch Size: {args.batch_size: <10} Workers: {args.workers}")
     print(f"Config params: {getattr(cfg.data, args.dataset).params}")
     print(f"Inference Time: {inference_time:.3f} ms")
+    print(f"Throughput: {throughput:.3f} images/s")
     print("=" + "*=" * 12)
     print()
 

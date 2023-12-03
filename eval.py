@@ -1,5 +1,5 @@
 from utils import get_args, get_dataset, pretty_print_perf
-from benchmarking import get_inference_time
+from benchmarking import get_performance
 from torch.utils.data import DataLoader
 from config import get_config
 
@@ -15,16 +15,18 @@ def exec(args, cfg, model, dataset):
             pin_memory=True,
             shuffle=False,
         )
-        inference_time = get_inference_time(model, dataloader, cfg.model.input_shape)
+        inference_time, throughput = get_performance(
+            model, dataloader, cfg.model.input_shape
+        )
         if args.silent:
-            print(f"Inference Time: {inference_time}")
+            print(f"Inference Time: {inference_time} \t Throughput: {throughput}")
         else:
-            pretty_print_perf(inference_time, args, cfg)
+            pretty_print_perf(inference_time, throughput, args, cfg)
 
     elif args.eval_mode == "acc":
         pass
-
-    raise NotImplementedError
+    else:
+        raise NotImplementedError
 
 
 def main():

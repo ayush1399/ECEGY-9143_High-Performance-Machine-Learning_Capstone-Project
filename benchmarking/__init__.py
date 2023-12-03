@@ -1,3 +1,3 @@
-from .inference_time import get_inference_time
+from .performance import get_performance
 
-__all__ = ["get_inference_time"]
+__all__ = ["get_performance"]
