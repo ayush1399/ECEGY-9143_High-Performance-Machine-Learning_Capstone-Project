@@ -24,11 +24,11 @@ data:
       - "threshold"
 
   Imagenet1KTest:
-    path: "ILSVRC2012/test"
+    path: ""
     params:
 
   Imagenet1KVal:
-    path: "ILSVRC2012/val"
+    path: ""
     params:
 
 model:
