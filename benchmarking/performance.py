@@ -39,7 +39,4 @@ def get_performance(model, dataloader, input_shape=(3, 224, 224)):
         batch_time = start_event.elapsed_time(end_event)
         total_time += batch_time
 
-        total_time_seconds = total_time / 1000
-        images_per_second = num_samples / total_time_seconds
-
-    return total_time / num_samples, images_per_second
+    return total_time / num_samples
