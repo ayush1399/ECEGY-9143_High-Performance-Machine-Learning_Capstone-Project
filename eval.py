@@ -1,5 +1,5 @@
 from utils import get_args, get_dataset, pretty_print_perf
-from benchmarking import get_performance
+from benchmarking import get_performance, get_top1_accuracy, get_top5_accuracy
 from torch.utils.data import DataLoader
 from config import get_config
 
@@ -15,16 +15,22 @@ def exec(args, cfg, model, dataset):
             pin_memory=True,
             shuffle=False,
         )
+
         inference_time, throughput = get_performance(
             model, dataloader, cfg.model.input_shape
         )
+
         if args.silent:
             print(f"Inference Time: {inference_time} \t Throughput: {throughput}")
         else:
             pretty_print_perf(inference_time, throughput, args, cfg)
 
     elif args.eval_mode == "acc":
-        pass
+        if args.top5:
+            acc = get_top5_accuracy(model, dataset, args, cfg)
+        else:
+            acc = get_top1_accuracy(model, dataset, args, cfg)
+        pretty_print_perf(acc, args, cfg, dataset)
     else:
         raise NotImplementedError
 
