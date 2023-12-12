@@ -11,7 +11,7 @@ def ResNet(weights=ResNet152_Weights.IMAGENET1K_V1, progress=False, **kwargs):
 
 
 import ViT
-import RPN
+from RPN import RPN
 import RPN_P
 import RPN_PQ
 import RPN_PQ_EE
