@@ -1,5 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmcls.registry import MODELS
+from RPN.co_advise.mmcls.registry import MODELS
 
 BACKBONES = MODELS
 NECKS = MODELS

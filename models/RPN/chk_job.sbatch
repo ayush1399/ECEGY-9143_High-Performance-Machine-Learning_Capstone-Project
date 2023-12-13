@@ -14,5 +14,7 @@ module purge
 singularity exec --nv \
 		--overlay /scratch/km5939/swin_t/overlay-15GB-500K.ext3:ro \
 		/scratch/work/public/singularity/cuda10.2-cudnn7-devel-ubuntu18.04.sif\
-		/bin/bash -c "source /ext3/env.sh; cd /vast/km5939/co-advise-master; conda activate /scratch/km5939/.conda/swin; cd /scratch/km5939/Swin-Transformer/kernels/window_process; 
-python setup.py install; cd /vast/km5939/co-advise-master; python -m torch.distributed.launch --nproc_per_node 1 --master_port 12345 main.py --resume ./ckpt.pth --eval  --data-path /vast/km5939/ImageNet"
+		/bin/bash -c "source /ext3/env.sh; cd /vast/km5939/ECEGY-9143_High-Performance-Machine-Learning_Capstone-Project/models/RPN/co_advise; conda activate 
+/scratch/km5939/.conda/swin; cd /scratch/km5939/Swin-Transformer/kernels/window_process; 
+python setup.py install; cd /vast/km5939/ECEGY-9143_High-Performance-Machine-Learning_Capstone-Project/models/RPN/co_advise; python -m torch.distributed.launch --nproc_per_node 1 
+--master_port 12345 main.py --resume ./ckpt.pth --eval  --data-path /vast/km5939/data"
