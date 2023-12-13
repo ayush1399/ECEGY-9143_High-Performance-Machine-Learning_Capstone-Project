@@ -13,7 +13,7 @@ eval_datasets = [
     "ImagenetV2",
 ]
 
-eval_models = ["RPN", "RPN-P", "RPN-PQ", "RPN-PQ-EE", "ViT", "ResNet"]
+eval_models = ["RPN", "RPN-P", "RPN-PQ", "RPN-PQ-EE", "ViT", "ResNet", "Swin_V2"]
 
 argparser = argparse.ArgumentParser()
 argparser.add_argument("--dataset", choices=eval_datasets, required=True)
@@ -30,7 +30,7 @@ def get_args():
 
 
 def get_dataset(args, cfg):
-    transform = get_transform(args.dataset)
+    transform = get_transform(args.model, args.dataset)
 
     dataset = getattr(datasets, args.dataset)
     dataset_root = os.path.join(
