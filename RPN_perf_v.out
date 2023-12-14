@@ -1,0 +1,45 @@
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN        DATASET: Imagenet1KTest
+Batch Size: 1          Workers: 4
+Config params: None
+Inference Time: 6.284 ms
+Throughput: 159.137 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN        DATASET: Imagenet1KTest
+Batch Size: 4          Workers: 4
+Config params: None
+Inference Time: 2.105 ms
+Throughput: 474.993 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN        DATASET: Imagenet1KTest
+Batch Size: 8          Workers: 4
+Config params: None
+Inference Time: 1.767 ms
+Throughput: 565.877 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN        DATASET: Imagenet1KTest
+Batch Size: 16         Workers: 4
+Config params: None
+Inference Time: 1.575 ms
+Throughput: 634.951 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN        DATASET: Imagenet1KTest
+Batch Size: 32         Workers: 4
+Config params: None
+Inference Time: 1.500 ms
+Throughput: 666.802 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+

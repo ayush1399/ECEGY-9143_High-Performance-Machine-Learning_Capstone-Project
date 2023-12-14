@@ -1,4 +1,4 @@
-from torchvision.models import resnet152, ResNet152_Weights
+from torchvision.models import resnet152
 
 import sys
 import os
@@ -6,8 +6,8 @@ import os
 sys.path.append(os.path.join(os.getcwd(), "models"))
 
 
-def ResNet(weights=ResNet152_Weights.IMAGENET1K_V1, progress=False, **kwargs):
-    return resnet152(weights=weights, progress=progress, **kwargs)
+def ResNet(pretrained = True):
+    return resnet152(weights=weights, pretrained=True)
 
 
 import ViT
