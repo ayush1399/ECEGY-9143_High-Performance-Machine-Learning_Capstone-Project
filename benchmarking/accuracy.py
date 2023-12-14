@@ -12,11 +12,12 @@ def get_accuracy(model, dataset, transforms, args, cfg, top5=False):
         params = getattr(cfg.data, args.dataset).params
         return dataset.eval_model(
             model,
-            root=dataset_root,
+            dataset_root,
+            *params,
             transforms=transforms,
             batch_size=args.batch_size,
             top5=top5,
-            *params,
+            num_workers=args.workers,
         )
     else:
         return dataset.eval_model(
@@ -25,6 +26,7 @@ def get_accuracy(model, dataset, transforms, args, cfg, top5=False):
             transforms=transforms,
             batch_size=args.batch_size,
             top5=top5,
+            num_workers=args.workers,
         )
 
 
