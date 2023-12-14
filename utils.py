@@ -1,4 +1,3 @@
-from click import echo
 from transforms import get_transform
 
 import argparse
@@ -67,9 +66,6 @@ def pretty_print_perf(inference_time, throughput, args, cfg):
 
 
 def pretty_print_acc(acc, args, cfg, dataset):
-    print("=" + "*=" * 12)
-    print(f"MODEL: {args.model: <10} DATASET: {args.dataset}")
-    print(f"Config params: {getattr(cfg.data, args.dataset).params}")
-    dataset.print_acc(acc, args.top5)
-    print("=" + "*=" * 12)
+    print()
+    dataset.pretty_print_acc(acc, args, cfg)
     print()
