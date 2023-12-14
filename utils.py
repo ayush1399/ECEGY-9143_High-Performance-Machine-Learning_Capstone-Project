@@ -13,7 +13,7 @@ eval_datasets = [
     "ImagenetV2",
 ]
 
-eval_models = ["RPN", "RPN-P", "RPN-PQ", "RPN-PQ-EE", "ViT", "ResNet"]
+eval_models = ["RPN", "RPN-P", "RPN-PQ", "RPN-PQ-EE", "ViT", "ResNet", "Swin_V2"]
 
 argparser = argparse.ArgumentParser()
 argparser.add_argument("--dataset", choices=eval_datasets, required=True)
@@ -29,10 +29,13 @@ def get_args():
     return argparser.parse_args()
 
 
-def get_dataset(args, cfg):
-    transform = get_transform(args.dataset)
-
+def get_dataset(args, cfg, get_class=False):
     dataset = getattr(datasets, args.dataset)
+    transform = get_transform(args.model, args.dataset)
+
+    if get_class:
+        return dataset, transform
+
     dataset_root = os.path.join(
         cfg.data.root, os.path.join(*getattr(cfg.data, args.dataset).path.split("/"))
     )
@@ -63,9 +66,6 @@ def pretty_print_perf(inference_time, throughput, args, cfg):
 
 
 def pretty_print_acc(acc, args, cfg, dataset):
-    print("=" + "*=" * 12)
-    print(f"MODEL: {args.model: <10} DATASET: {args.dataset}")
-    print(f"Config params: {getattr(cfg.data, args.dataset).params}")
-    dataset.print_acc(acc, args.top5)
-    print("=" + "*=" * 12)
+    print()
+    dataset.pretty_print_acc(acc, args, cfg)
     print()

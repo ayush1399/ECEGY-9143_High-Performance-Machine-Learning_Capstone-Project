@@ -1,0 +1,159 @@
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ResNet     DATASET: Imagenet1KTest
+Batch Size: 1          Workers: 4
+Config params: None
+Inference Time: 12.374 ms
+Throughput: 80.813 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ResNet     DATASET: Imagenet1KTest
+Batch Size: 4          Workers: 4
+Config params: None
+Inference Time: 3.523 ms
+Throughput: 283.872 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ResNet     DATASET: Imagenet1KTest
+Batch Size: 8          Workers: 4
+Config params: None
+Inference Time: 2.972 ms
+Throughput: 336.464 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ResNet     DATASET: Imagenet1KTest
+Batch Size: 16         Workers: 4
+Config params: None
+Inference Time: 2.417 ms
+Throughput: 413.779 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ResNet     DATASET: Imagenet1KTest
+Batch Size: 32         Workers: 4
+Config params: None
+Inference Time: 2.273 ms
+Throughput: 439.998 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ViT        DATASET: Imagenet1KTest
+Batch Size: 1          Workers: 4
+Config params: None
+Inference Time: 4.217 ms
+Throughput: 237.148 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ViT        DATASET: Imagenet1KTest
+Batch Size: 4          Workers: 4
+Config params: None
+Inference Time: 1.464 ms
+Throughput: 683.166 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ViT        DATASET: Imagenet1KTest
+Batch Size: 8          Workers: 4
+Config params: None
+Inference Time: 1.143 ms
+Throughput: 874.969 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ViT        DATASET: Imagenet1KTest
+Batch Size: 16         Workers: 4
+Config params: None
+Inference Time: 0.863 ms
+Throughput: 1159.155 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ViT        DATASET: Imagenet1KTest
+Batch Size: 32         Workers: 4
+Config params: None
+Inference Time: 0.795 ms
+Throughput: 1258.609 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: Swin_V2    DATASET: Imagenet1KTest
+Batch Size: 1          Workers: 4
+Config params: None
+Inference Time: 27.423 ms
+Throughput: 36.465 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: Swin_V2    DATASET: Imagenet1KTest
+Batch Size: 4          Workers: 4
+Config params: None
+Inference Time: 7.363 ms
+Throughput: 135.817 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: Swin_V2    DATASET: Imagenet1KTest
+Batch Size: 8          Workers: 4
+Config params: None
+Inference Time: 6.076 ms
+Throughput: 164.581 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: Swin_V2    DATASET: Imagenet1KTest
+Batch Size: 16         Workers: 4
+Config params: None
+Inference Time: 5.518 ms
+Throughput: 181.236 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: Swin_V2    DATASET: Imagenet1KTest
+Batch Size: 32         Workers: 4
+Config params: None
+Inference Time: 5.181 ms
+Throughput: 193.015 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN        DATASET: Imagenet1KTest
+Batch Size: 1          Workers: 4
+Config params: None
+Inference Time: 6.284 ms
+Throughput: 159.137 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN        DATASET: Imagenet1KTest
+Batch Size: 4          Workers: 4
+Config params: None
+Inference Time: 2.105 ms
+Throughput: 474.993 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN        DATASET: Imagenet1KTest
+Batch Size: 8          Workers: 4
+Config params: None
+Inference Time: 1.767 ms
+Throughput: 565.877 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN        DATASET: Imagenet1KTest
+Batch Size: 16         Workers: 4
+Config params: None
+Inference Time: 1.575 ms
+Throughput: 634.951 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN        DATASET: Imagenet1KTest
+Batch Size: 32         Workers: 4
+Config params: None
+Inference Time: 1.500 ms
+Throughput: 666.802 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
