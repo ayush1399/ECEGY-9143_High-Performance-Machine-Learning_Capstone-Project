@@ -35,9 +35,9 @@ imagenet1k_eval_transform = Compose(
 
 def get_transform(model, dataset):
     if model == "ViT":
-        return ViT_B_32_Weights.IMAGENET1K_V1.transforms
+        return ViT_B_32_Weights.IMAGENET1K_V1.transforms()
     if model == "Swin_V2":
-        return Swin_V2_B_Weights.IMAGENET1K_V1.transforms
+        return Swin_V2_B_Weights.IMAGENET1K_V1.transforms()
 
     if (
         dataset == "ImagenetA"
