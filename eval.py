@@ -1,4 +1,4 @@
-from utils import get_args, get_dataset, pretty_print_perf
+from utils import get_args, get_dataset, pretty_print_perf, pretty_print_acc
 from benchmarking import get_performance, get_top1_accuracy, get_top5_accuracy
 from torch.utils.data import DataLoader
 from config import get_config
@@ -31,7 +31,8 @@ def exec(args, cfg, model, dataset):
             acc = get_top5_accuracy(model, dataset, transforms, args, cfg)
         else:
             acc = get_top1_accuracy(model, dataset, transforms, args, cfg)
-        pretty_print_perf(acc, args, cfg, dataset)
+
+        pretty_print_acc(acc, args, cfg, dataset)
     else:
         raise NotImplementedError
 
@@ -41,7 +42,7 @@ def main():
     cfg = get_config()
 
     model = getattr(models, args.model)()
-    dataset = get_dataset(args, cfg)
+    dataset = get_dataset(args, cfg, get_class=args.eval_mode == "acc")
 
     exec(args, cfg, model, dataset)
 
