@@ -1,3 +1,4 @@
+from click import echo
 from transforms import get_transform
 
 import argparse
@@ -29,10 +30,13 @@ def get_args():
     return argparser.parse_args()
 
 
-def get_dataset(args, cfg):
+def get_dataset(args, cfg, get_class=False):
+    dataset = getattr(datasets, args.dataset)
     transform = get_transform(args.model, args.dataset)
 
-    dataset = getattr(datasets, args.dataset)
+    if get_class:
+        return dataset, transform
+
     dataset_root = os.path.join(
         cfg.data.root, os.path.join(*getattr(cfg.data, args.dataset).path.split("/"))
     )

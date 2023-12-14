@@ -26,10 +26,11 @@ def exec(args, cfg, model, dataset):
             pretty_print_perf(inference_time, throughput, args, cfg)
 
     elif args.eval_mode == "acc":
+        dataset, transforms = dataset
         if args.top5:
-            acc = get_top5_accuracy(model, dataset, args, cfg)
+            acc = get_top5_accuracy(model, dataset, transforms, args, cfg)
         else:
-            acc = get_top1_accuracy(model, dataset, args, cfg)
+            acc = get_top1_accuracy(model, dataset, transforms, args, cfg)
         pretty_print_perf(acc, args, cfg, dataset)
     else:
         raise NotImplementedError
