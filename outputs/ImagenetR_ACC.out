@@ -1,0 +1,29 @@
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ResNet     DATASET: ImagenetR
+Top-1 Acc: 27.83%
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ResNet     DATASET: ImagenetR
+Top-5 Acc: 42.15%
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ViT        DATASET: ImagenetR
+Top-1 Acc: 28.41%
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ViT        DATASET: ImagenetR
+Top-5 Acc: 42.11%
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: Swin_V2    DATASET: ImagenetR
+Top-1 Acc: 32.64%
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: Swin_V2    DATASET: ImagenetR
+Top-5 Acc: 47.08%
+=*=*=*=*=*=*=*=*=*=*=*=*=
