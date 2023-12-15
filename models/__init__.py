@@ -1,15 +1,14 @@
 import torchvision.models as M
 
-import RPN
-import RPN_P
-import RPN_PQ
-import RPN_PQ_EE
-
 import sys
 import os
 
 sys.path.append(os.path.join(os.getcwd(), "models"))
 
+from RPN import RPN
+import RPN_P
+import RPN_PQ
+import RPN_PQ_EE
 
 def get_model_weights(model, version):
     weights = getattr(M, model)
