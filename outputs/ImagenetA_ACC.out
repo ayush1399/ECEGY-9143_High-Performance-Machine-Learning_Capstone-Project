@@ -1,0 +1,35 @@
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ResNet     DATASET: ImagenetA
+Config params: None
+Top-1 Accuracy: 2.36
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ResNet     DATASET: ImagenetA
+Config params: None
+Top-5 Accuracy: 12.15
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ViT        DATASET: ImagenetA
+Config params: None
+Top-1 Accuracy: 4.01
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ViT        DATASET: ImagenetA
+Config params: None
+Top-5 Accuracy: 14.72
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: Swin_V2    DATASET: ImagenetA
+Config params: None
+Top-1 Accuracy: 20.04
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: Swin_V2    DATASET: ImagenetA
+Config params: None
+Top-5 Accuracy: 45.65
+=*=*=*=*=*=*=*=*=*=*=*=*=

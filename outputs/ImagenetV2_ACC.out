@@ -1,0 +1,41 @@
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ResNet     DATASET: ImagenetV2
+ALL: Top-1 Acc: 74.09%
+MATCHED-FREQUENCY: Top-1 Acc: 66.98%
+THRESHOLD: Top-1 Acc: 75.10%
+TOP-IMAGES: Top-1 Acc: 80.20%
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ResNet     DATASET: ImagenetV2
+ALL: Top-5 Acc: 92.37%
+MATCHED-FREQUENCY: Top-5 Acc: 87.24%
+THRESHOLD: Top-5 Acc: 93.77%
+TOP-IMAGES: Top-5 Acc: 96.11%
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ViT        DATASET: ImagenetV2
+ALL: Top-1 Acc: 70.57%
+MATCHED-FREQUENCY: Top-1 Acc: 62.98%
+THRESHOLD: Top-1 Acc: 71.51%
+TOP-IMAGES: Top-1 Acc: 77.23%
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: ViT        DATASET: ImagenetV2
+ALL: Top-5 Acc: 89.60%
+MATCHED-FREQUENCY: Top-5 Acc: 83.98%
+THRESHOLD: Top-5 Acc: 90.88%
+TOP-IMAGES: Top-5 Acc: 93.93%
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: Swin_V2    DATASET: ImagenetV2
+ALL: Top-1 Acc: 79.47%
+MATCHED-FREQUENCY: Top-1 Acc: 73.22%
+THRESHOLD: Top-1 Acc: 80.81%
+TOP-IMAGES: Top-1 Acc: 84.38%
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: Swin_V2    DATASET: ImagenetV2
+ALL: Top-5 Acc: 95.00%
+MATCHED-FREQUENCY: Top-5 Acc: 91.31%
+THRESHOLD: Top-5 Acc: 96.20%
+TOP-IMAGES: Top-5 Acc: 97.50%
