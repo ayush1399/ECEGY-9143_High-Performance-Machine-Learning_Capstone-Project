@@ -7,7 +7,7 @@ from functools import partial
 from timm.models.vision_transformer import VisionTransformer, _cfg
 from timm.models.registry import register_model
 from timm.models.layers import trunc_normal_
-from mmcls.models.backbones import RedNet
+from RPN.co_advise.mmcls.models.backbones import RedNet
 
 __all__ = [
     'deit_tiny_patch16_224', 'deit_small_patch16_224', 'deit_base_patch16_224',

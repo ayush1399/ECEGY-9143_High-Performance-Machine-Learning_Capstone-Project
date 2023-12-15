@@ -7,7 +7,7 @@ from torchvision.transforms import (
     Resize,
     ToTensor,
 )
-from torchvision.models import ViT_B_32_Weights, Swin_V2_B_Weights
+from torchvision.models import ViT_B_32_Weights, Swin_V2_B_Weights, ResNet152_Weights
 
 mean = [0.485, 0.456, 0.406]
 std = [0.229, 0.224, 0.225]
@@ -35,9 +35,11 @@ imagenet1k_eval_transform = Compose(
 
 def get_transform(model, dataset):
     if model == "ViT":
-        return ViT_B_32_Weights.IMAGENET1K_V1.transforms
+        return ViT_B_32_Weights.IMAGENET1K_V1.transforms()
     if model == "Swin_V2":
-        return Swin_V2_B_Weights.IMAGENET1K_V1.transforms
+        return Swin_V2_B_Weights.IMAGENET1K_V1.transforms()
+    if model == "ResNet":
+        return ResNet152_Weights.IMAGENET1K_V1.transforms()
 
     if (
         dataset == "ImagenetA"
