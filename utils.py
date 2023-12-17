@@ -13,7 +13,7 @@ eval_datasets = [
     "ImagenetV2",
 ]
 
-eval_models = ["RPN", "RPN-P", "RPN-PQ", "RPN-PQ-EE", "ViT", "ResNet", "Swin_V2"]
+eval_models = ["RPN", "RPN_P", "RPN_PQ", "RPN_PQ_EE", "ViT", "ResNet", "Swin_V2"]
 
 argparser = argparse.ArgumentParser()
 argparser.add_argument("--dataset", choices=eval_datasets, required=True)
