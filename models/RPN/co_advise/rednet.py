@@ -1,4 +1,4 @@
-from mmcls.models import RedNet
+from RPN.co_advise.mmcls.models.backbones import RedNet
 import torch.nn as nn
 
 class Red50(nn.Module):

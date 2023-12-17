@@ -1,0 +1,64 @@
+Identity()
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: Imagenet1KVal
+Top-1 Acc: 80.05%
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+Identity()
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: Imagenet1KVal
+Top-5 Acc: 95.21%
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+Identity()
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: ImagenetA
+Config params: None
+Top-1 Accuracy: 8.59
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+
+Identity()
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: ImagenetA
+Config params: None
+Top-5 Accuracy: 26.60
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+
+Identity()
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: ImagenetR
+Top-1 Acc: 27.57%
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+Identity()
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: ImagenetR
+Top-5 Acc: 41.01%
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+Identity()
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: ImagenetV2
+ALL: Top-1 Acc: 75.53%
+MATCHED-FREQUENCY: Top-1 Acc: 68.52%
+THRESHOLD: Top-1 Acc: 76.58%
+TOP-IMAGES: Top-1 Acc: 81.50%
+
+Identity()
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: ImagenetV2
+ALL: Top-5 Acc: 93.00%
+MATCHED-FREQUENCY: Top-5 Acc: 88.61%
+THRESHOLD: Top-5 Acc: 94.26%
+TOP-IMAGES: Top-5 Acc: 96.13%
+

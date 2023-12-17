@@ -1,0 +1,57 @@
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+pre pruning sparsity stats: 
+
+Global Sparsity: 0.00
+Total parameters pre pruning: 25776138
+**/**/**/**/**/**/**/**/**/**/**
+post pruning sparsity stats: 
+
+Global Sparsity: 24.99
+Total parameters post pruning: 25776138
+pruned parameters: 6408496.0
+unpruned_parameters: 19225728.0
+Training: Loaded teacher models
+Epoch: 1/1, loss = 4.121792206409332, Accuracy = 0.5645727684212909
+**/**/**/**/**/**/**/**/**/**/**
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+pre pruning sparsity stats: 
+
+Global Sparsity: 0.00
+Total parameters pre pruning: 25776138
+**/**/**/**/**/**/**/**/**/**/**
+post pruning sparsity stats: 
+
+Global Sparsity: 24.99
+Total parameters post pruning: 25776138
+pruned parameters: 6408496.0
+unpruned_parameters: 19225728.0
+Training: Loaded teacher models
+Epoch: 1/1, loss = 4.201130327204248, Accuracy = 0.5586539459726952
+%%===============Saving the Pruned Model==============>>>>>>>>>%%
+saved Model: pruned_model.pth
+===============================================================
+**/**/**/**/**/**/**/**/**/**/**
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+pre pruning sparsity stats: 
+
+Global Sparsity: 0.00
+Total parameters pre pruning: 25776138
+**/**/**/**/**/**/**/**/**/**/**
+post pruning sparsity stats: 
+
+Global Sparsity: 24.99
+Total parameters post pruning: 25776138
+pruned parameters: 6408496.0
+unpruned_parameters: 19225728.0
+Training: Loaded teacher models
+Epoch: 1/1, loss = 1.1421863041259908, Accuracy = 0.8357255533431629
+**/**/**/**/**/**/**/**/**/**/**
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+%%===============Saving the Pruned Model==============>>>>>>>>>%%
+saved Model: pruned_model_2.pth
+===============================================================

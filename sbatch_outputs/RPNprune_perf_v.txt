@@ -1,0 +1,48 @@
+Processor: Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz
+RAM: 193Gi
+GPU:     Product Name                          : Tesla V100-PCIE-32GB
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: Imagenet1KTest
+Batch Size: 1          Workers: 4
+Config params: None
+Inference Time: 5.983 ms
+Throughput: 167.131 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: Imagenet1KTest
+Batch Size: 4          Workers: 4
+Config params: None
+Inference Time: 2.095 ms
+Throughput: 477.435 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: Imagenet1KTest
+Batch Size: 8          Workers: 4
+Config params: None
+Inference Time: 1.760 ms
+Throughput: 568.230 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: Imagenet1KTest
+Batch Size: 16         Workers: 4
+Config params: None
+Inference Time: 1.573 ms
+Throughput: 635.877 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: Imagenet1KTest
+Batch Size: 32         Workers: 4
+Config params: None
+Inference Time: 1.499 ms
+Throughput: 667.209 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
