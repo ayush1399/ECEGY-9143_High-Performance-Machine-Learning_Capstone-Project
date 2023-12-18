@@ -33,3 +33,15 @@ MODEL: Swin_V2    DATASET: ImagenetA
 Config params: None
 Top-5 Accuracy: 45.65
 =*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN        DATASET: ImagenetA
+Config params: None
+Top-1 Accuracy: 10.55
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN        DATASET: ImagenetA
+Config params: None
+Top-5 Accuracy: 31.07
+=*=*=*=*=*=*=*=*=*=*=*=*=

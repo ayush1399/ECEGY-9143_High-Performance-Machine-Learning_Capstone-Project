@@ -27,3 +27,13 @@ Top-1 Acc: 32.64%
 MODEL: Swin_V2    DATASET: ImagenetR
 Top-5 Acc: 47.08%
 =*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN        DATASET: ImagenetR
+Top-1 Acc: 30.35%
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN        DATASET: ImagenetR
+Top-5 Acc: 44.81%
+=*=*=*=*=*=*=*=*=*=*=*=*=
