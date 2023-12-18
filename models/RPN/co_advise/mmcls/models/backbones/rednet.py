@@ -1,9 +1,9 @@
 import torch.nn as nn
 import torch.utils.checkpoint as cp
-from mmcv.cnn import (ConvModule, build_conv_layer, build_norm_layer,
-                      constant_init, kaiming_init)
-from mmcv.utils.parrots_wrapper import _BatchNorm
-
+from mmcv.cnn import (ConvModule, build_conv_layer, build_norm_layer)
+from .compat import constant_init, kaiming_init
+#from mmcv.utils.parrots_wrapper import _BatchNorm
+from torch.nn.modules.batchnorm import _BatchNorm
 from ..builder import BACKBONES
 from .base_backbone import BaseBackbone
 from ..utils.involution_cuda import involution
