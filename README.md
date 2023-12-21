@@ -2,7 +2,19 @@
 
 > ## Setup
 >
-> **Create a new conda environment using the environment file in the repo**
+> **Clone the repo**
+>
+> ```
+> git clone git@github.com:ayush1399/ECEGY-9143_High-Performance-Machine-Learning_Capstone-Project.git
+> ```
+>
+> **and pull in the submodules**
+>
+> ```
+> git submodule update --init --recursive
+> ```
+>
+> **Then create a new conda environment using the environment file in the repo**
 >
 > ```
 > conda env create -f environment.yml
