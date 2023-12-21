@@ -1,7 +1,0 @@
-/bin/bash: line 1: /scratch/km5939/.conda/swin: Is a directory
-Traceback (most recent call last):
-  File "/scratch/km5939/Swin-Transformer/kernels/window_process/setup.py", line 2, in <module>
-    from torch.utils.cpp_extension import BuildExtension, CUDAExtension
-ModuleNotFoundError: No module named 'torch'
-/ext3/miniconda3/bin/python: Error while finding module specification for 'torch.distributed.launch' (ModuleNotFoundError: No module named 'torch')
-/bin/bash: line 3: --master_port: command not found
