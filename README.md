@@ -10,6 +10,10 @@
 >
 > ### Configuration
 >
+> - Download all datasets from the provided links and set them up. Update the root directory for datasets in the config.yaml file.
+> - For imagenetV2 you can specify which subset should be used or all datasets should be used in the config.yaml file.
+> - Similarly for ImagenetC you can specify the perturbation set, perturbation type and noise level in the config.yaml file.
+>
 > ### Testing accuracy:
 >
 > To test accuracy choose your model (ResNet, ViT, Swin_V2, RPN, RPN_P, RPN_PQ, RPN_EE)
@@ -23,6 +27,14 @@
 >
 > ```
 > python eval.py --dataset ImagenetR --eval_mode acc --model ViT --workers 4 --top5
+> ```
+>
+> ### Testing throughput
+>
+> Similar to accuracy, you can specify the number of workers, batch size, model and dataset. The allowed models are (ResNet, ViT, Swin_V2, RPN, RPN_P, RPN_PQ, RPN_EE) and datasets are (Imagenet1KTrain, Imagenet1KVal, Imagenet1KTest, ImagenetA, ImagenetC, ImagenetR, ImagenetV2)
+>
+> ```
+> python eval.py --dataset Imagenet1KTest --eval_mode perf --model ViT --batch_size 8 --workers 4
 > ```
 
 ---
@@ -49,3 +61,23 @@
 > ### Imagenet-V2
 >
 > The three Imagenet-v2 sets (matched-frequency, threshold and top-images) are available here - [https://huggingface.co/datasets/vaishaal/ImageNetV2/tree/main](https://huggingface.co/datasets/vaishaal/ImageNetV2/tree/main)
+
+---
+
+> # Results
+>
+> ## Throughputs
+>
+> ![Performance analysis on Imagenet1K Test set](assets/perf.png)
+>
+> ## Accuracy - All datasets
+>
+> ![Accuracy analysis for all models on different datasets](assets/acc.png)
+>
+> ## Accuracy - ImagenetV2 subsets
+>
+> ![Accuracy analysis for all models on different ImagenetV2 subsets](assets/iv2.png)
+>
+> ## Accuracy - ImagenetC by perturbation types
+>
+> ## Accuracy - ImagenetC noise level granularity for each perturbation
