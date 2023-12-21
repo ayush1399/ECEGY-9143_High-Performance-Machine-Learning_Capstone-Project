@@ -1,5 +1,5 @@
 data:
-  root: "/vast/as16513/data"
+  root: "/vast/km5939/data"
   ImagenetA: 
     path: "ImagenetA"
     params:

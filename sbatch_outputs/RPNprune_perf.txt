@@ -1,0 +1,48 @@
+Processor: Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz
+RAM: 248Gi
+GPU:     Product Name                          : Quadro RTX 8000
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: Imagenet1KTest
+Batch Size: 1          Workers: 4
+Config params: None
+Inference Time: 6.398 ms
+Throughput: 156.287 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: Imagenet1KTest
+Batch Size: 4          Workers: 4
+Config params: None
+Inference Time: 2.532 ms
+Throughput: 395.006 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: Imagenet1KTest
+Batch Size: 8          Workers: 4
+Config params: None
+Inference Time: 2.285 ms
+Throughput: 437.656 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: Imagenet1KTest
+Batch Size: 16         Workers: 4
+Config params: None
+Inference Time: 2.302 ms
+Throughput: 434.344 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
+Identity()
+=*=*=*=*=*=*=*=*=*=*=*=*=
+MODEL: RPN_P      DATASET: Imagenet1KTest
+Batch Size: 32         Workers: 4
+Config params: None
+Inference Time: 2.076 ms
+Throughput: 481.619 images/s
+=*=*=*=*=*=*=*=*=*=*=*=*=
+
