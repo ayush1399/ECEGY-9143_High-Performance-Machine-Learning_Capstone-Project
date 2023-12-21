@@ -77,6 +77,14 @@
 >
 > ![Accuracy analysis for all models on different ImagenetV2 subsets](assets/iv2.png)
 >
+> ## Accuracy - ImagenetC by perturbation categories
+>
+> ![Accuracy analysys for all models on ImagenetC perturbation categories](assets/imgC.png)
+>
 > ## Accuracy - ImagenetC by perturbation types
 >
+> ![Accuracy analysis for all models on ImagenetC perturbations](assets/perturbation.png)
+>
 > ## Accuracy - ImagenetC noise level granularity for each perturbation
+>
+> ![Accuracy on noise level granularity for blur category](assets/1_blur.png) > ![Accuracy on noise level granularity for digital category](assets/2_digital.png) > ![Accuracy on noise level granularity for extra category](assets/3_extra.png) > ![Accuracy on noise level granularity for noise category](assets/4_noise.png) > ![Accuracy on noise level granularity for weather category](assets/5_weather.png)

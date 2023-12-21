@@ -8,7 +8,8 @@ sys.path.append(os.path.join(os.getcwd(), "models"))
 from RPN import RPN
 from RPN_P import RPN_P
 import RPN_PQ
-import RPN_PQ_EE
+import RPN_EE
+
 
 def get_model_weights(model, version):
     weights = getattr(M, model)
@@ -34,4 +35,4 @@ def Swin_V2(
     return M.swin_v2_b(weights=weights, progress=progress, **kwargs)
 
 
-__all__ = ["ResNet", "RPN", "RPN_P", "RPN_PQ", "RPN_PQ_EE", "ViT", "Swin_V2"]
+__all__ = ["ResNet", "RPN", "RPN_P", "RPN_PQ", "RPN_EE", "ViT", "Swin_V2"]

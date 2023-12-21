@@ -11,13 +11,15 @@ eval_datasets = [
     "ImagenetC",
     "ImagenetR",
     "ImagenetV2",
-    "Imagenet1KTrain"
+    "Imagenet1KTrain",
 ]
 
-eval_models = ["RPN", "RPN_P", "RPN_PQ", "RPN_PQ_EE", "ViT", "ResNet", "Swin_V2"]
+eval_models = ["RPN", "RPN_P", "RPN_PQ", "RPN_EE", "ViT", "ResNet", "Swin_V2"]
 
 argparser = argparse.ArgumentParser()
-argparser.add_argument("--dataset", choices=eval_datasets, default="Imagenet1KTrain", required=False)
+argparser.add_argument(
+    "--dataset", choices=eval_datasets, default="Imagenet1KTrain", required=False
+)
 argparser.add_argument("--model", choices=eval_models, required=True)
 argparser.add_argument("--batch_size", type=int, default=128)
 argparser.add_argument("--workers", type=int, default=8)
