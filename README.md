@@ -16,8 +16,7 @@
 >
 > ### Testing accuracy:
 >
-> 1. To test accuracy choose your model (ResNet, ViT, Swin_V2, RPN, RPN_P, RPN_PQ, RPN_EE)
-> 2. Choose your dataset (Imagenet1KVal, ImagenetA, ImagenetC, ImagenetR, ImagenetV2)
+> To test accuracy choose your model (ResNet, ViT, Swin_V2, RPN, RPN_P, RPN_PQ, RPN_EE) and choose your dataset (Imagenet1KVal, ImagenetA, ImagenetC, ImagenetR, ImagenetV2)
 >
 > ```
 > python eval.py --dataset ImagenetA --eval_mode acc --model ResNet --workers 4
