@@ -8,7 +8,7 @@ sys.path.append(os.path.join(os.getcwd(), "models"))
 from RPN import RPN
 from RPN_P import RPN_P
 import RPN_PQ
-import RPN_EE
+from RPN_EE import RPN_EE
 
 
 def get_model_weights(model, version):

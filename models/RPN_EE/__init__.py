@@ -1,5 +1,6 @@
 from models import RPN_P
 
+import torch.nn.functional as F
 import torch.nn as nn
 import torch
 
@@ -25,4 +26,6 @@ class EarlyExitResNet(nn.Module):
         return exit_output, entropy
 
 
-"/vast/km5939/ECEGY-9143_High-Performance-Machine-Learning_Capstone-Project/models/RPN_P/pruned_model.pth"
+def RPN_EE(exit_layer=40, *args, **kwargs):
+    pretrained_model = RPN_P(*args, **kwargs)
+    return EarlyExitResNet(pretrained_model, exit_layer=exit_layer)
